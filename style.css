@@ -104,6 +104,24 @@ ul {padding: 0;
 
 }
 
+.header a[aria-current="page"] {
+
+    background-color: #756597;
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+}
+
+.header a[aria-current="page"]:hover {
+
+    background-color: #665685;
+
+    color: #ffffff;
+
+}
+
 
 /* ========================================
    HERO SECTION
