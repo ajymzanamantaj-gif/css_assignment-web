@@ -1,0 +1,960 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background-color: #f8f7fc;
+
+    color: #465268;
+
+    line-height: 1.6;
+
+}
+
+
+/* ========================================
+   ELEMENT SELECTORS - TASK 4
+   SIZING UNITS - TASK 10
+======================================== */
+
+h1,h2,h3 {margin-top: 0;}
+
+h1 { font-size: 2rem;}
+
+h2 {font-size: 1.5em;
+color: #59658b;}
+
+p {font-size: 16px;
+    color: #687286;
+    line-height: 1.8;}
+
+a {color: #59658b;}
+
+ul {padding: 0;
+    list-style-position: inside;}
+
+
+/* ========================================
+   HEADER - TASK 7
+======================================== */
+
+.header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 18px 8%;
+
+    background-color: #dce8f3;
+
+    border-bottom: 1px solid #c9d8e7;
+
+}
+
+.site-title {
+
+    margin-right: auto;
+
+    color: #526486;
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+
+}
+
+.header a {
+
+    padding: 8px 15px;
+
+    color: #59658b;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+
+}
+
+.header a:hover {
+
+    background-color: #ffffff;
+
+    color: #8d7bb5;
+
+}
+
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero {
+
+    position: relative;
+
+    padding: 90px 20px;
+
+    text-align: center;
+
+    background-color: #aebedb;
+
+    color: #ffffff;
+
+}
+
+#main-heading {
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: #ffffff;
+
+    font-size: 3rem;
+
+    text-shadow: 1px 2px 4px rgba(70, 80, 110, 0.2);
+
+    border-bottom: 3px solid #e7d9ed;
+
+    padding-bottom: 10px;
+
+}
+
+.hero p {
+
+    max-width: 650px;
+
+    margin: 0 auto 25px;
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+}
+
+
+/* ========================================
+   ABSOLUTE POSITIONING - TASK 9
+======================================== */
+
+.hero-badge {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 30px;
+
+    padding: 8px 15px;
+
+    background-color: #e7d9ed;
+
+    color: #71658f;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    border-radius: 20px;
+
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.button {
+
+    display: inline-block;
+
+    padding: 11px 25px;
+
+    background-color: #8f9fc6;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    transition: 0.3s;
+
+}
+
+.button:hover {
+
+    background-color: #7c8db7;
+
+}
+
+
+/* ========================================
+   TITLE BAND
+======================================== */
+
+.title-band {
+
+    padding: 45px 20px;
+
+    text-align: center;
+
+    background-color: #eee9f6;
+
+}
+
+.title-band h1 {
+
+    margin: 0;
+
+    color: #59658b;
+
+    font-size: 2.4rem;
+
+}
+
+
+/* ========================================
+   SECTIONS
+======================================== */
+
+.band {
+
+    padding: 65px 20px;
+
+    text-align: center;
+
+}
+
+.band-white {
+
+    background-color: #ffffff;
+
+}
+
+.band-light {
+
+    background-color: #f0f3f8;
+
+}
+
+.content {
+
+    width: 85%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+}
+
+.content h2 {
+
+    margin-bottom: 30px;
+
+    font-size: 2rem;
+
+    color: #59658b;
+
+}
+
+.content p {
+
+    max-width: 700px;
+
+    margin: 12px auto;
+
+}
+
+
+/* ========================================
+   ABOUT SECTION
+   FLOAT AND CLEAR
+======================================== */
+
+.photo {
+
+    float: left;
+
+    width: 210px;
+
+    height: 210px;
+
+    margin: 0 35px 20px 0;
+
+    object-fit: cover;
+
+    border: 5px solid #e4dcef;
+
+    border-radius: 25px;
+
+    box-shadow: 0 8px 20px rgba(100, 90, 130, 0.1);
+
+}
+
+#welcome {
+
+    color: #8d7bb5;
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+}
+
+.note {
+
+    color: #7896a9;
+
+    font-family: "Courier New", monospace;
+
+}
+
+
+/* Clear after floated photo */
+
+.band-white .content::after {
+
+    content: "";
+
+    display: block;
+
+    clear: both;
+
+}
+
+
+/* ========================================
+   HIGHLIGHT
+======================================== */
+
+.highlight {
+
+    padding: 2px 8px;
+
+    background-color: #e9e0f3;
+
+    color: #756597;
+
+    border-radius: 8px;
+
+}
+
+/* ========================================
+   FEATURE CARDS
+======================================== */
+
+.feature {
+
+    display: inline-block;
+
+    width: 30%;
+
+    margin: 1%;
+
+    padding: 20px;
+
+    vertical-align: top;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e2e5ef;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 15px rgba(90, 100, 130, 0.05);
+
+    transition: 0.3s;
+
+}
+
+.feature:hover {
+
+    transform: translateY(-4px);
+
+    border-color: #c6b8df;
+
+}
+
+.feature img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 170px;
+
+    object-fit: cover;
+
+    margin-bottom: 15px;
+
+    border-radius: 12px;
+
+}
+
+.feature h3 {
+
+    color: #59658b;
+
+}
+
+
+/* ========================================
+   GOALS LIST
+======================================== */
+
+.content ul {
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    text-align: left;
+
+}
+
+.content li {
+
+    display: list-item;
+
+    margin: 15px 0;
+
+    padding: 12px 18px;
+
+    background-color: #ffffff;
+
+    border-left: 4px solid #c6b8df;
+
+    border-radius: 10px;
+
+    color: #687286;
+
+}
+
+
+/* ========================================
+   BOX MODEL - TASK 8
+======================================== */
+
+.card {
+
+    width: 70%;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    background-color: #ffffff;
+
+    border: 2px solid #d8dcec;
+
+    border-radius: 15px;
+
+    color: #687286;
+
+}
+
+.card-small {
+
+    margin: 10px auto;
+
+    padding: 10px;
+
+    border: 1px dashed #b7c5d8;
+
+}
+
+.card-big {
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    border: 4px solid #c6b8df;
+
+}
+
+
+/* ========================================
+   TABLE
+======================================== */
+
+table {
+
+    width: 100%;
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    overflow: hidden;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e1e5ef;
+
+    border-radius: 15px;
+
+    box-shadow: 0 6px 18px rgba(90, 100, 130, 0.05);
+
+}
+
+caption {
+
+    margin-bottom: 18px;
+
+    color: #7b7895;
+
+    font-size: 1.1em;
+
+    font-weight: 600;
+
+}
+
+th {
+
+    padding: 16px;
+
+    background-color: #dce5f0;
+
+    color: #526486;
+
+    font-weight: 600;
+
+}
+
+td {
+
+    padding: 15px;
+
+    border-top: 1px solid #edf0f5;
+
+    color: #687286;
+
+}
+
+tbody tr:nth-child(even) {
+
+    background-color: #faf9fd;
+
+}
+
+tbody tr:hover {
+
+    background-color: #f0eafa;
+
+}
+
+
+/* ========================================
+   POSITIONING - TASK 9
+======================================== */
+
+.pos-box {
+
+    width: 400px;
+
+    max-width: 100%;
+
+    min-height: 170px;
+
+    margin: 25px auto;
+
+    padding: 25px;
+
+    border: 1px solid #d0dce9;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 12px rgba(100, 90, 130, 0.05);
+
+}
+
+.pos-box h3 {
+
+    margin: 10px 0;
+
+    color: #59658b;
+
+}
+
+.pos-box p {
+
+    font-size: 15px;
+
+}
+
+.step-number {
+
+    display: inline-block;
+
+    padding: 4px 12px;
+
+    background-color: #ffffff;
+
+    color: #8d7bb5;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    border-radius: 15px;
+
+}
+
+
+/* Static */
+
+.static-box {
+
+    position: static;
+
+    background-color: #d6e8f0;
+
+    color: #526f82;
+
+}
+
+
+/* Relative */
+
+.relative-box {
+
+    position: relative;
+
+    top: 5px;
+
+    background-color: #e4dff2;
+
+    color: #756597;
+
+}
+
+.journey-text {
+
+    clear: both;
+
+}
+
+
+/* ========================================
+   SIZING UNITS - TASK 10
+======================================== */
+
+
+/* px */
+
+.size-px {
+
+    font-size: 20px;
+
+}
+
+
+/* em */
+
+.size-em {
+
+    font-size: 1.2em;
+
+}
+
+
+/* rem */
+
+.size-rem {
+
+    font-size: 1.3rem;
+
+}
+
+
+/* % */
+
+.size-percent {
+
+    font-size: 105%;
+
+}
+
+
+/* Goal Cards */
+
+.goal-item {
+
+    max-width: 700px;
+
+    margin: 18px auto;
+
+    padding: 18px 25px;
+
+    background-color: #ffffff;
+
+    border-left: 4px solid #c6b8df;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 15px rgba(90, 100, 130, 0.04);
+
+}
+
+.goal-item h3 {
+
+    margin-bottom: 8px;
+
+    color: #59658b;
+
+}
+
+.goal-item p {
+
+    margin: 0 auto;
+
+    font-size: 14px;
+
+}
+
+
+/* ========================================
+   HOBBIES: FLOAT AND CLEAR - TASK 11
+======================================== */
+
+.float-box {
+
+    width: 48%;
+
+    min-height: 430px;
+
+    padding: 25px;
+
+    border: 1px solid #e0e3ee;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    background-color: #ffffff;
+
+    box-shadow: 0 6px 18px rgba(90, 100, 130, 0.05);
+
+}
+
+.left-box {
+
+    float: left;
+
+    background-color: #eef4fa;
+
+}
+
+.right-box {
+
+    float: right;
+
+    background-color: #f3edf8;
+
+}
+
+.hobby-img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    margin-bottom: 15px;
+
+    border-radius: 12px;
+
+}
+
+.float-box h3 {
+
+    color: #59658b;
+
+}
+
+.clear-both {
+
+    clear: both;
+
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    background-color: #dce5f0;
+
+    border-top: 1px solid #c9d8e7;
+
+}
+
+.footer p {
+
+    margin: 5px;
+
+    color: #59658b;
+
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 700px) {
+
+
+    .header {
+
+        flex-direction: column;
+
+        gap: 8px;
+
+    }
+
+
+    .site-title {
+
+        margin-right: 0;
+
+    }
+
+
+    .hero {
+
+        padding: 70px 20px;
+
+    }
+
+
+    #main-heading {
+
+        font-size: 2rem;
+
+    }
+
+
+    .hero-badge {
+
+        position: static;
+
+        display: inline-block;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .photo {
+
+        float: none;
+
+        display: block;
+
+        margin: 0 auto 25px;
+
+    }
+
+
+    .feature {
+
+        display: block;
+
+        width: 100%;
+
+        margin: 20px 0;
+
+    }
+
+
+    .card {
+
+        width: 100%;
+
+    }
+
+
+    .float-box {
+
+        float: none;
+
+        width: 100%;
+
+        min-height: auto;
+
+        margin-bottom: 25px;
+
+    }
+
+
+    .content {
+
+        width: 100%;
+
+    }
+
+
+    .pos-box {
+
+        width: 100%;
+
+    }
+
+
+    .goal-item {
+
+        padding: 15px;
+
+    }
+
+
+    table {
+
+        font-size: 13px;
+
+    }
+    th,
+    td {
+        padding: 10px 6px;
+    }
+
+}
